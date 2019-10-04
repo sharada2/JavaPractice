@@ -16,41 +16,40 @@ public class CirCotroller extends Circle {
 //package concept1;
 
 public class CirCotroller implements shapes{
-	private int radius;
-	
-	
-	public int getRadius() {
-		return radius;
-	}
-
-	public void setRadius(int radius) {
-		this.radius = radius;
-	}
-	
-	public void area() {
+	@Override
+	public double Area(float radius) {
 		double Area = PI * radius * radius;
-		double perimeter = 2 * PI * radius ;
-		System.out.println(Area);
-		System.out.println(perimeter);
+		return Area;
+//		double perimeter = 2 * PI * radius ;
+		//System.out.println(Area);
+		//System.out.println(perimeter);
 	}
 
+//	@Override
+//	public void Area() {
+//		// TODO Auto-generated method stub
+//		
+//	}
+
 	@Override
-	public void Area() {
+	public double Area(int l) {
+		return 0.0;
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void Area(int l) {
+	public double Area(double l, double b) {
+		return 00.000;
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
-	public void Area(int l, int b) {
-		// TODO Auto-generated method stub
-		
-	}
+//	@Override
+//	public double Area(float r) {
+//		// TODO Auto-generated method stub
+//		return 0;
+//	}
 	
 
 }

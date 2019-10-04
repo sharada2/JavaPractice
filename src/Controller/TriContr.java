@@ -1,5 +1,6 @@
 package Controller;
 
+import Model.Tri_mod;
 import concept1.*;
 /*
 public class TriContr extends Triangle {
@@ -13,66 +14,24 @@ public class TriContr extends Triangle {
 */
 
 public class TriContr implements shapes{
-	private int length1;
-	private double area;
-	private int base;
-	
-	public int getBase() {
-		return base;
-	}
-
-	public void setBase(int base) {
-		this.base = base;
-	}
-
-	
-
-	public int getLength1() {
-		return length1;
-	}
-
-	public void setLength1(int length1) {
-		this.length1 = length1;
-	}
-
-//	@Override
-//	public double Area(int l) {
-//		// TODO Auto-generated method stub
-//		area = Math.sqrt(3)/4*l*l;
-//		return area;
-//		//System.out.print("Area of equlateral traingle is"+area);
-//	}
-
 	
 	
-
-//	@Override
-//	public double Area(int l, int b) {
-//		// TODO Auto-generated method stub
-//		area = l*b/2;
-//		return area;
-//		//System.out.print("Area of isosceleus traingle is \t"+area);
-//	}*
-
 	@Override
-	public void Area() {
+	public double Area(float r) {
 		// TODO Auto-generated method stub
-		
+		return 0;
 	}
 
 	@Override
-	public float Area(int l) {
+	public double Area(int l) {
 		// TODO Auto-generated method stub
-		area = Math.sqrt(3)/4*l*l;
-		return (float)area;
-		
+		return Math.sqrt(3)/4*l*l;
 	}
 
 	@Override
-	public float Area(int l, int b) {
+	public double Area(double l, double b) {
 		// TODO Auto-generated method stub
-		area = l*b/2;
-		return (float)area;
+		return l*b/2;
 	}
 	
 	
