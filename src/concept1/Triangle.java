@@ -34,7 +34,7 @@ public class Triangle extends TriContr {
 			double triArea  = tri.Area(trimod.getLength1());
 			System.out.print("Area of Equilateral traingle\t"+triArea);
 		}else if(triType == 2) {
-			System.out.print("enter triangle length \t");
+			System.out.print("enter triangle lengtth \t");
 			int l =sc.nextInt();
 			trimod.setLength1(l);
 			System.out.print("enter triangle base \t");
