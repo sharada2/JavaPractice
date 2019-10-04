@@ -3,6 +3,7 @@ package concept1;
 import java.util.Scanner;
 
 import Controller.*;
+import Model.Cir_Mod;
 /*
 public class Triangle implements shapes{
 	private int length1;
@@ -19,12 +20,34 @@ import Model.Tri_mod;
 
 public class Triangle extends TriContr {
 	public static void main(String args[]) {
+		
+		System.out.print("Enter the shapetype 1. Circle 2.Traingle");
+		Scanner  sc = new Scanner(System.in);
+		int shapeType = sc.nextInt();
+		switch (shapeType)
+		{
+		case 1:
+			break;
+		case 2:
+			break;
+			
+		}
+		CirCotroller c = new CirCotroller();
+		Cir_Mod cmod = new Cir_Mod();
+		System.out.print("Enter the radius");
+		int r = sc.nextInt();
+		cmod.setRadius(r);
+		int radius = cmod.getRadius();
+		double cirArea =  c.Area((float)radius);
+		System.out.print("Area of circle \t"+cirArea);
+		
+		
 		TriContr tri = new TriContr();
 		Tri_mod trimod = new Tri_mod();
 		System.out.println("enter triangle type 1 or 2");
 		System.out.println("1.Equilateral \t 2.Isoceleus \n");
 		
-		Scanner sc = new Scanner(System.in);
+		//Scanner sc = new Scanner(System.in);
 		int triType = sc.nextInt();
 		
 		if(triType == 1) {
@@ -34,7 +57,7 @@ public class Triangle extends TriContr {
 			double triArea  = tri.Area(trimod.getLength1());
 			System.out.print("Area of Equilateral traingle\t"+triArea);
 		}else if(triType == 2) {
-			System.out.print("enter triangle lengtth \t");
+			System.out.print("enter triangle height \t");
 			int l =sc.nextInt();
 			trimod.setLength1(l);
 			System.out.print("enter triangle base \t");
