@@ -37,9 +37,7 @@ public class Circle extends CirCotroller {
 		
 		System.out.print("Enter the radius");
 		int r = sc.nextInt();
-		cmod.setRadius(r);
-		int radius = cmod.getRadius();
-		double cirArea =  c.Area((float)radius);
+		double cirArea =  c.Area(r);
 		System.out.print("Area of circle \t"+cirArea);
 	}
 }
