@@ -10,7 +10,7 @@ public class CircleTest {
 	@Test
 	public void areaTest() {
 		CirCotroller c = new CirCotroller();
-		double actualValue =  c.Area(9.0f);
+		double actualValue =  c.Area();
 		System.out.print(actualValue);
 		assertEquals(254.34,actualValue,0.01);
 		

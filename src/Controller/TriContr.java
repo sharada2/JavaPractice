@@ -17,7 +17,7 @@ public class TriContr implements shapes{
 	
 	
 	@Override
-	public double Area(float r) {
+	public double Area() {
 		// TODO Auto-generated method stub
 		return 0;
 	}

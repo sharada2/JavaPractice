@@ -18,10 +18,10 @@ public class Triangle implements shapes{
 }*/
 import Model.Tri_mod;
 
-public class Triangle extends TriContr {
+public class Triangle {
 	public static void main(String args[]) {
 		
-		System.out.print("Enter the shapetype 1. Circle 2.Traingle");
+		System.out.print("Enter the shape type 1. Circle 2.Traingle\t");
 		Scanner  sc = new Scanner(System.in);
 		int shapeType = sc.nextInt();
 		switch (shapeType)
@@ -29,20 +29,20 @@ public class Triangle extends TriContr {
 		case 1:
 			CirCotroller c = new CirCotroller();
 			Cir_Mod cmod = new Cir_Mod();
-			System.out.print("Enter the radius");
+			System.out.print("Enter the radius\t");
 			int r = sc.nextInt();
-			cmod.setRadius(r);
-			int radius = cmod.getRadius();
-			double cirArea =  c.Area((float)radius);
-			System.out.print("Area of circle \t"+cirArea);
+			
+			//int radius = cmod.getRadius();
+			double cirArea =  c.Area(r);
+			System.out.println(cirArea);
+			//System.out.print("Area of circle \t");
 			break;
 		case 2:
 			TriContr tri = new TriContr();
 			Tri_mod trimod = new Tri_mod();
-			System.out.println("enter triangle type 1 or 2");
+			System.out.println("Enter triangle type 1 or 2");
 			System.out.println("1.Equilateral \t 2.Isoceleus \n");
 			
-			//Scanner sc = new Scanner(System.in);
 			int triType = sc.nextInt();
 			
 			if(triType == 1) {
@@ -69,13 +69,5 @@ public class Triangle extends TriContr {
 			break;
 			
 		}
-		
-		
-		
-		/*
-		int length1 =10;
-		tri.setLength1(length1);
-		int length = tri.getLength1();*/
-		
 	}
 }
